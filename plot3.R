@@ -25,11 +25,8 @@ final_data$Sub_metering_2 <- as.numeric(as.character(final_data$Sub_metering_2))
 final_data$Sub_metering_3 <- as.numeric(as.character(final_data$Sub_metering_3))
 
 # Create plot 3
-<<<<<<< HEAD
 png("plot3.png", width = 480, height = 480, units = "px")
 
-=======
->>>>>>> upstream/master
 yrange <- range(c(final_data$Sub_metering_1, final_data$Sub_metering_2, final_data$Sub_metering_3))
 
 with(final_data, plot(Sub_metering_1 ~ datetime, ylim = yrange, type = "l", ylab = "Global Active Power (kilowatts)", xlab = ""))
@@ -40,10 +37,4 @@ lines(final_data$Sub_metering_3 ~ final_data$datetime, type = "l", col = "blue")
 
 legend("topright", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty = c(1, 1, 1))
 
-<<<<<<< HEAD
-# Creating the graph file
-=======
-# Creating the graph file 
-dev.copy(png, file = "plot3.png", height = 480, width = 480, units = "px")
->>>>>>> upstream/master
 dev.off()
