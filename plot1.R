@@ -24,5 +24,5 @@ final_data$Global_active_power <- as.numeric(as.character(final_data$Global_acti
 hist(final_data$Global_active_power, col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)")
 
 # Creating the graph file 
-dev.copy(png, file = "plot1.png", height = 480, width = 480)
+dev.copy(png, file = "plot1.png", height = 480, width = 480, units = "px")
 dev.off()

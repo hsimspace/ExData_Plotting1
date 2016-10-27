@@ -52,7 +52,7 @@ legend("topright", col = c("black", "red", "blue"), legend = c("Sub_metering_1",
 with(final_data, plot(Global_reactive_power ~ datetime, type = "l", ylab = "Global_reactive_power (kilowatts)", xlab = ""))
 
 # Creating the graph file 
-dev.copy(png, file = "plot4.png", height = 480, width = 480)
+dev.copy(png, file = "plot4.png", height = 480, width = 480, units = "px")
 dev.off()
 
 

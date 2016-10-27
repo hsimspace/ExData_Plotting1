@@ -36,5 +36,5 @@ lines(final_data$Sub_metering_3 ~ final_data$datetime, type = "l", col = "blue")
 legend("topright", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty = c(1, 1, 1))
 
 # Creating the graph file 
-dev.copy(png, file = "plot3.png", height = 480, width = 480)
+dev.copy(png, file = "plot3.png", height = 480, width = 480, units = "px")
 dev.off()

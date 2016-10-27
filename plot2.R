@@ -29,6 +29,6 @@ final_data$Global_active_power <- as.numeric(as.character(final_data$Global_acti
 with(final_data, plot(Global_active_power ~ datetime, type = "l", ylab = "Global Active Power (kilowatt)", xlab = ""))
 
 # Creating the graph file 
-dev.copy(png, file = "plot2.png", height = 480, width = 480)
+dev.copy(png, file = "plot2.png", height = 480, width = 480, units = "px")
 dev.off()
 
