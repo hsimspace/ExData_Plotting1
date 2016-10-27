@@ -21,8 +21,13 @@ final_data <- subset(consumption_data, (Date >= "2007-02-01" & Date <= "2007-02-
 final_data$Global_active_power <- as.numeric(as.character(final_data$Global_active_power))
 
 # Creating plot1
+<<<<<<< HEAD
+png("plot1.png", width = 480, height = 480, units = "px")
+hist(final_data$Global_active_power, col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)")
+=======
 hist(final_data$Global_active_power, col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)")
 
 # Creating the graph file 
 dev.copy(png, file = "plot1.png", height = 480, width = 480, units = "px")
+>>>>>>> upstream/master
 dev.off()

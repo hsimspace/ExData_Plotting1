@@ -33,6 +33,10 @@ final_data$Voltage <- as.numeric(as.character(final_data$Voltage))
 
 
 # Create plot 4
+<<<<<<< HEAD
+png("plot4.png", width = 480, height = 480, units = "px")
+=======
+>>>>>>> upstream/master
 par(mfrow = c(2, 2), mar = c(4, 4, 2, 1))
 
 with(final_data, plot(Global_active_power ~ datetime, type = "l", ylab = "Global Active Power (kilowatts)", xlab = ""))
@@ -51,8 +55,11 @@ legend("topright", col = c("black", "red", "blue"), legend = c("Sub_metering_1",
 
 with(final_data, plot(Global_reactive_power ~ datetime, type = "l", ylab = "Global_reactive_power (kilowatts)", xlab = ""))
 
+<<<<<<< HEAD
+=======
 # Creating the graph file 
 dev.copy(png, file = "plot4.png", height = 480, width = 480, units = "px")
+>>>>>>> upstream/master
 dev.off()
 
 
